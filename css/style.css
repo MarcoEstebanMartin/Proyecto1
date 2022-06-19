@@ -9,18 +9,18 @@ nav{
     background: #414141;
     height: 120px;
     width: 100%;
-  }
-  nav ul{
+}
+nav ul{
     float: right;
     margin-right: 20px;
     
-  }
-  nav ul li{
+}
+nav ul li{
     display: inline-block;
     line-height: 120px;
     margin: 0 5px;
-  }
-  nav ul li a{
+}
+nav ul li a{
     color: #fff;
     font-size: 18px;
     padding: 7px 13px;
@@ -28,17 +28,33 @@ nav{
     text-transform: uppercase;
     font-family: ;
     text-decoration: none;
-  }
-  
-  li a.active, li a:hover{
+}
+
+li a.active, li a:hover{
     background: #D12323;
     transition: .5s;
-  }
-  .logo{
+}
+.enlace {
     position: absolute;
-    padding: 0px 40px;
-    height: 125px;
-  }
+    padding: 0px 30px;
+}
+.logo{
+    height: 120px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #b9b9b9;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check { 
+    display:none;
+}
+
 /* Header */
 
 header {
@@ -57,10 +73,7 @@ header {
 .header-paginas {
     width: 100%;
     height: 300px;
-    background: #414141
-    
-    
-    ;
+    background: #414141;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -134,13 +147,6 @@ main .sobre-nosotros{
     width: 60%;
 }
 
-.contenido-textos h3{
-    margin-bottom: 25px;
-    padding-top: 60px;
-    padding-left: 40px;
-
-}
-
 .contenido-textos h2 span{
     background: #D12323;
     color: #fff;
@@ -170,9 +176,10 @@ main .sobre-nosotros{
 }
 
 .galeria-marcas{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap:20px;
 }
 
 .imagen-marcas{
@@ -293,8 +300,7 @@ main .sobre-nosotros{
 
 /* MAPA */
 .map{
-    padding: 5px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -449,9 +455,13 @@ footer{
     padding-bottom: 40px;
     border-bottom: 1px solid #ccc;
 }
-.foto-redes {
-    width: 42px;
+.contenido-footer {
+font-size: 42px;  
 }
+.redes {
+    color:#999;
+}
+
 .titulo-final{
     text-align: center;
     font-size: 24px;
@@ -555,3 +565,391 @@ footer{
     transform: translateY (-2px);
 }
 
+@media screen and (max-width:900px) {
+
+nav ul li a {
+color: #fff;
+font-size: 15px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+font-family: ;
+text-decoration: none;
+}
+
+li a.active, li a:hover{
+background: #D12323;
+transition: .5s;
+}
+
+.logo{
+height: 120px;
+padding-top: px;
+}
+
+.textos-header {
+margin-top: 40px;
+    }
+
+.contenedor-sobre-nosotros{
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+
+.sobre-nosotros .contenido-textos{
+width: 80%;
+padding-top: 50px;
+}
+
+/* Galeria */
+
+.imagen-port{
+width: 44%;
+}
+
+/* Clientes */
+
+.tarjetas{
+gap: 20px;
+}
+
+.tarjetas .tarjeta{
+width: 90%;
+}
+
+.ctarjetas .tarjeta:first-child{
+margin-bottom: 30px;
+}
+
+/* servicios */
+
+.servicios-cont{
+justify-content: center;
+flex-direction: column;
+}
+
+.servicio-ind{
+width: 100%;
+text-align: center;
+}
+
+.servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+margin-bottom: 60px;
+}
+
+.servicio-ind img{
+width: 90%;
+}
+}
+
+@media screen and (max-width:768px){
+.checkbtn {
+display:block
+}
+
+.logo {
+height: 90px;
+}
+
+nav {
+height: 90px;
+}
+
+ul {
+position: fixed;
+width: 100%;
+height: 58vh;
+background-color: #d9b6b6;
+top:80px;
+left:-100%;
+text-align:center;
+transition: all .4s;
+}   
+
+nav ul li {
+display:block;
+margin: 50px 0;
+line-height: 30px;
+}
+
+nav ul li a {
+        font-size: 18px;
+        }
+
+li a:hover, li a.active{
+    background-color: #D12323;
+    color:#fff;
+}
+
+#check:checked ~ ul{
+        left:0;
+}
+
+.wave{
+    position:absolute;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+    }
+
+    header .textos-header{
+    height: 250px;
+    width: 100%;
+    }
+
+    .textos-header h1  {
+        font-size: 40px;
+    }
+    .textos-header h2  {
+        font-size: 30px;
+    }
+
+    /* La empresa */
+
+    .imagen-sobre-nosotros{
+        margin-bottom: 30px;
+        width: 70%;
+        height: 35%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Marcas Lideres */
+
+    .imagen-marcas{
+    height: 150px; }
+
+    .galeria-marcas{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 1fr 1fr;
+        gap:20px;
+    }
+
+    /* Clientes */
+
+    .tarjetas .tarjeta{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .tarjetas .tarjeta img{
+        width: 90px;
+        height: 90px;
+    }
+    /* Catalogo */
+
+    .catalogo-cont {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .catalogo-ind {
+    height: 70%;
+    width: 70%;
+    padding: 0px;
+    
+    }
+    .fotos-catalogo {
+    
+    height: 30px;
+    padding: ;
+    max-width: 250px;
+    }
+    .foto-almacen
+    {
+    padding-right: 60px;
+    }
+
+    /* Mapa */
+
+    .map {
+        max-width: 350px;
+        max-height: 400px;
+    }
+
+    /* Formulario */
+    .body {
+    max-width: 90%;
+    }
+    .contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+.contenedor-contacto > * {
+    padding: 2em;
+}
+
+}
+
+@media screen and (max-width:500px){
+    .checkbtn {
+        display:block
+    }
+    .logo {
+        height: 80px;
+    }
+    nav {
+        height: 80px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 58vh;
+        background-color: #d9b6b6;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition: all .4s;
+    }   
+    nav ul li {
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        
+    }
+
+    li a:hover, li a.active{
+        background-color: #D12323;
+        color:#fff;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    .wave{
+    position:absolute;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+    }
+
+    header .textos-header{
+    height: 250px;
+    width: 100%;
+    }
+
+    .textos-header h1  {
+        font-size: 35px;
+    }
+    .textos-header h2  {
+        font-size: 22px;
+    }
+
+    /* La empresa */
+
+.imagen-sobre-nosotros{
+    margin-bottom: 30px;
+    width: 70%;
+    height: 35%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+/* Marcas Lideres */
+
+    .imagen-marcas{
+    height: 150px; }
+
+/* Clientes */
+
+.tarjetas .tarjeta{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    }
+
+.tarjetas .tarjeta img{
+        width: 90px;
+        height: 90px;
+    }
+/* Catalogo */
+
+    .catalogo-cont {
+    display: flex;
+    flex-direction: column;
+    }
+
+.catalogo-ind {
+    height: 70%;
+    width: 70%;
+    padding: 0px;
+    
+}
+.fotos-catalogo {
+    
+height: 30px;
+padding: ;
+max-width: 250px;
+}
+.foto-almacen
+{
+padding-right: 60px;
+}
+
+/* Mapa */
+
+.map {
+        max-width: 350px;
+        max-height: 400px;
+}
+
+    /* Formulario */
+.body {
+    max-width: 90%;
+}
+.contenedor-contacto 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contenedor-contacto > * {
+    padding: 2em;
+}
+.contacto-info h4,
+.contacto-info ul,
+.contacto-info p {
+    text-align: left;
+}
+
+/* Footer */
+
+.contenido-footer{
+        text-align: center;
+    
+}
+    .titulo-final {
+        font-size: 18px;
+}
+    .redes {
+        font-size
+}
+
+/* Blog */
+    .contenido{
+        display:flex;
+        flex-direction: column;
+        margin: 70px;
+}
+}
