@@ -9,16 +9,20 @@ nav{
     background: #414141;
     height: 120px;
     width: 100%;
+    box-shadow: 2px 2px 5px 2px #1f1c1d;
+    
 }
 nav ul{
     float: right;
     margin-right: 20px;
+    
     
 }
 nav ul li{
     display: inline-block;
     line-height: 120px;
     margin: 0 5px;
+    
 }
 nav ul li a{
     color: #fff;
@@ -26,13 +30,13 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: ;
     text-decoration: none;
 }
 
 li a.active, li a:hover{
     background: #D12323;
     transition: .5s;
+    
 }
 .enlace {
     position: absolute;
@@ -40,6 +44,7 @@ li a.active, li a:hover{
 }
 .logo{
     height: 120px;
+    
 }
 
 .checkbtn {
@@ -69,6 +74,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+   
 }
 .header-paginas {
     width: 100%;
@@ -87,17 +93,20 @@ header .textos-header{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .textos-header h1{
     font-size: 50px;
     color:#fff;
+    
 }
 
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
     color:#fff;
+   
 }
 
 .wave{
@@ -106,10 +115,12 @@ header .textos-header{
     width: 100%;
     height: 150px; 
     overflow: hidden;
+   
 }
 
 body {
     font-family: 'open sans';
+    
 }
 
 .contenedor {
@@ -118,6 +129,7 @@ body {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+    
 }
 
 .titulo {
@@ -229,6 +241,7 @@ main .sobre-nosotros{
 .tarjetas{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .tarjetas .tarjeta{
@@ -240,9 +253,11 @@ main .sobre-nosotros{
     justify-content: space-evenly;
     border-radius: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
 }
 
 .tarjetas .tarjeta img{
+    
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -253,12 +268,13 @@ main .sobre-nosotros{
 
 .tarjetas .tarjeta > .contenido-texto-tarjeta{
     width: 60%;
-    color: #fff;
+    color: #fff;ç
 }
 
 .tarjetas .tarjeta > .contenido-texto-tarjeta p{
     font-weight: 300;
     padding-top: 5px;
+
 }
 
 /*  Catalogo */
@@ -484,6 +500,7 @@ font-size: 42px;
     grid-gap: 20px;
     max-width: 1000px;
     margin: auto;
+    gap:50px;
 }
 .post-img-1 {
     background: url(../images/logistica.jpg);
@@ -511,7 +528,7 @@ font-size: 42px;
 }
 .post {
     box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 1);
-    transition .2s;
+    transition: .2s;
     overflow: hidden;
 }
 .post:hover { 
@@ -573,7 +590,6 @@ font-size: 15px;
 padding: 7px 13px;
 border-radius: 3px;
 text-transform: uppercase;
-font-family: ;
 text-decoration: none;
 }
 
@@ -659,10 +675,10 @@ height: 90px;
 }
 
 ul {
-position: fixed;
+position:fixed;
 width: 100%;
 height: 58vh;
-background-color: #d9b6b6;
+background-color: #dfc9c9;
 top:80px;
 left:-100%;
 text-align:center;
@@ -671,71 +687,55 @@ transition: all .4s;
 
 nav ul li {
 display:block;
-margin: 50px 0;
+margin: 55px 0;
 line-height: 30px;
 }
 
 nav ul li a {
-        font-size: 18px;
-        }
+font-size: 18px;
+}
 
 li a:hover, li a.active{
-    background-color: #D12323;
-    color:#fff;
+background-color: #D12323;
+color:#fff;
 }
 
 #check:checked ~ ul{
-        left:0;
+left:0;
 }
 
 .wave{
-    position:absolute;
-    margin-bottom: 0px;
-    width: 100%;
-    height: 100px; 
-    overflow: hidden;
+display:none;
+}
+
+/* La empresa */
+
+.imagen-sobre-nosotros{
+    margin-bottom: 30px;
+    width: 0%;
+    height: 5%;
     }
 
-    header .textos-header{
-    height: 250px;
-    width: 100%;
+.sobre-nosotros .contenido-textos{
+width: 85%;
+}
+
+/* Marcas Lideres */
+
+.imagen-marcas{
+    height: 150px;
+    max-width: 80%;
+}
+
+.galeria-marcas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:20px;
     }
 
-    .textos-header h1  {
-        font-size: 40px;
-    }
-    .textos-header h2  {
-        font-size: 30px;
-    }
+/* Clientes */
 
-    /* La empresa */
-
-    .imagen-sobre-nosotros{
-        margin-bottom: 30px;
-        width: 70%;
-        height: 35%;
-    }
-
-    .sobre-nosotros .contenido-textos{
-        width: 95%;
-    }
-
-    /* Marcas Lideres */
-
-    .imagen-marcas{
-    height: 150px; }
-
-    .galeria-marcas{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: auto auto ;
-        grid-template-rows: 1fr 1fr;
-        gap:20px;
-    }
-
-    /* Clientes */
-
-    .tarjetas .tarjeta{
+.tarjetas .tarjeta{
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -763,7 +763,6 @@ li a:hover, li a.active{
     .fotos-catalogo {
     
     height: 30px;
-    padding: ;
     max-width: 250px;
     }
     .foto-almacen
@@ -774,8 +773,8 @@ li a:hover, li a.active{
     /* Mapa */
 
     .map {
-        max-width: 350px;
-        max-height: 400px;
+    max-width: 350px;
+    max-height: 400px;
     }
 
     /* Formulario */
@@ -791,11 +790,21 @@ li a:hover, li a.active{
     padding: 2em;
 }
 
+.contenido { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 350px;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 @media screen and (max-width:500px){
     .checkbtn {
-        display:block
+    display:block
     }
     .logo {
         height: 80px;
@@ -804,32 +813,32 @@ li a:hover, li a.active{
         height: 80px;
     }
     ul {
-        position: fixed;
-        width: 100%;
-        height: 58vh;
-        background-color: #d9b6b6;
-        top:80px;
-        left:-100%;
-        text-align:center;
+    position: fixed;
+    width: 100%;
+    height: 58vh;
+    background-color: #d9b6b6;
+    top:80px;
+    left:-100%;
+    text-align:center;
         transition: all .4s;
     }   
     nav ul li {
-        display:block;
-        margin: 50px 0;
-        line-height: 30px;
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
     }
 
     nav ul li a {
-        font-size: 18px;
-        
+    font-size: 18px;
+    
     }
 
     li a:hover, li a.active{
-        background-color: #D12323;
-        color:#fff;
+    background-color: #D12323;
+    color:#fff;
     }
     #check:checked ~ ul{
-        left:0;
+    left:0;
     }
 
     .wave{
@@ -899,7 +908,6 @@ li a:hover, li a.active{
 .fotos-catalogo {
     
 height: 30px;
-padding: ;
 max-width: 250px;
 }
 .foto-almacen
@@ -910,8 +918,8 @@ padding-right: 60px;
 /* Mapa */
 
 .map {
-        max-width: 350px;
-        max-height: 400px;
+    max-width: 350px;
+    max-height: 400px;
 }
 
     /* Formulario */
@@ -941,9 +949,6 @@ padding-right: 60px;
 }
     .titulo-final {
         font-size: 18px;
-}
-    .redes {
-        font-size
 }
 
 /* Blog */
