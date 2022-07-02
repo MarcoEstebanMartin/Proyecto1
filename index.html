@@ -11,25 +11,26 @@
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <!-- FONT OPEN SANS -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
         <!-- FONT AWESOME -->
         <script src="https://kit.fontawesome.com/24c95f75e0.js" crossorigin="anonymous"></script>
         <!-- Animate -->
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./sass/style.css">
     </head>
 
 <body>
     <div class="contenedor-general">
-        <header>
+        <header class="header-principal">
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <a href="#" class="enlace">
-                <img src="../images/logo.png" alt="logo" class="logo">
+                <a href="#" class="enlace"><img src="./images/logo.png" alt="logo" class="logo">
+                
                 </a>
                 <ul>
                     <li><a class="active" href="./index.html">Inicio</a></li>
@@ -39,9 +40,9 @@
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            
+
             <div class="textos-header">
-                <h1  class="animate__animated animate__swing">Don Venancio, cumple.</h1>
+                <h1>Don Venancio, cumple.</h1>
                 <h2>25 años al servicio de la comunidad</h2>
             </div>
             <div class="wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -49,14 +50,14 @@
                 <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                 style="stroke: none; fill: #fff;"></path>
             </svg>
-        </div>
-        
+        </div> 
+    
     </header>
     <main>
-        <div class="container mb-5 col-lg-6">
+        <div class="container mb-5 mt-5 row-lg-6 text-center">
             <h2 class="titulo">La Empresa</h2>
-            <div class="d-flex ">
-                <img src="./images/foto1.jpg" alt="" class="imagen-sobre-nosotros">
+            <div class="row-lg-12 d-md-flex d-lg-flex d-sm-flex justify-content-center ">
+                <img src="./images/foto1.jpg" alt="" class="h-75 imagen-sobre-nosotros">
                 <div class="contenido-textos">
                     <h2><span>▼</span>¿ Quienes somos ?</h2>
                     <p>Don Venancio es una empresa distribuidora de alimentos y bebidas ubicada en la ciudad de General Villegas (Buenos Aires). Contamos con una gran variedad de productos, especialmente, una amplia variedad de quesos, de diferentes presentaciones y estacionalidades . Nuestra calidad de servicio asegura las condiciones pautadas en materia de entrega y distribución.
@@ -67,7 +68,7 @@
         </div>
 
 
-        <div class="marcas">
+        <div class="marcas animate__animated animate__backInLeft">
             <div class="container pb-5">
                 <h2 class="titulo">Marcas Líderes</h2>
                 <div class="galeria-marcas col-12">
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </div>
-         
+
         <div class="clientes contenedor">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="tarjetas">
@@ -113,7 +114,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
                     </div>
                 </div>
-           
+
                 <div class="tarjeta">
                     <img src="./images/face2.jpg" alt="">
                     <div class="contenido-texto-tarjeta">
@@ -149,7 +150,7 @@
         <div>
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.0873988298545!2d-63.01549074847024!3d-35.02954338756497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c4252aa1e2dee9%3A0x27703f4d30bb6ff1!2sPringles%20116%2C%20B6230%20Gral.%20Villegas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1653527113406!5m2!1sen!2sar" width="900" height="600" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              
+
             </div>
         </div>
 
@@ -160,15 +161,15 @@
                     <li><i class="fa-solid fa-credit-card"></i>Todos los medios de pago</i></li>
                 </ul>
             </div>
-            
-            
+
+
             <div class="contenedor-formulario">
-                
+
                 <div class="contenedor-contacto">
                     <div class="contacto-form">
                         <h2>Contactanos</h2>
                         <form action="">
-                            
+
                             <p>
                                 <label>Nombre y Apellido</label>
                                 <input type="text" name="nombre">
@@ -186,12 +187,12 @@
                                 <input type="text" name="asunto">
                             </p>
                             <p class="block">
-                                <label>Mensaje</label> 
+                                <label>Mensaje</label>
                                 <textarea name="mensaje" rows="3"></textarea>
                             </p>
                             <p class="block">
-                                <button>
-                             Enviar
+                            <button>
+                                Enviar
                             </button>
                         </p>
                     </form>
@@ -212,7 +213,7 @@
 
     <footer>
         <div class="contenedor-footer">
-        
+
             <div class="contenido-footer">
                 <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square redes"></i></a>
             </div>
