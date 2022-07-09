@@ -29,7 +29,8 @@ nav ul li a {
 
 li a.active, li a:hover {
   background: #D12323;
-  transition: .5s; }
+  transition: .5s;
+  color: #131313; }
 
 .enlace {
   position: absolute;
@@ -58,7 +59,7 @@ header {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(227, 22, 22, 0.912), rgba(255, 5, 22, 0.664)), url(../images/logistica.jpg);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(220, 167, 185, 0.459), rgba(246, 14, 14, 0.931)), url(../images/logistica.jpg);
+  background: linear-gradient(to right, rgba(41, 40, 41, 0.459), rgba(246, 14, 14, 0.931)), url(../images/logistica.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -382,12 +383,12 @@ ul {
 .contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  max-width: 1000px;
+  gap: 30px;
+  max-width: 1300px;
   margin: auto; }
 
 .post-img-1 {
-  background: url(../images/logistica.jpg);
+  background: url(/images/logistica.jpg);
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -395,7 +396,7 @@ ul {
   transition: .2s; }
 
 .post-img-2 {
-  background: url(../images/logistica.jpg);
+  background: url(/images/logistica.jpg);
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -403,7 +404,7 @@ ul {
   transition: .2s; }
 
 .post-img-3 {
-  background: url(../images/logistica.jpg);
+  background: url(/images/logistica.jpg);
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -508,7 +509,10 @@ ul {
   .servicio-ind:nth-child(1), .servicio-ind:nth-child(2) {
     margin-bottom: 60px; }
   .servicio-ind img {
-    width: 90%; } }
+    width: 90%; }
+  /* blog */
+  .contenido {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   .checkbtn {
@@ -521,7 +525,7 @@ ul {
     position: fixed;
     width: 100%;
     height: 58vh;
-    background-color: #d9b6b6;
+    background-color: #4d4141;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -601,7 +605,10 @@ ul {
     display: grid;
     grid-template-columns: 1fr; }
   .contenedor-contacto > * {
-    padding: 2em; } }
+    padding: 2em; }
+  /* blog */
+  .contenido {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (max-width: 500px) {
   .checkbtn {
@@ -614,7 +621,7 @@ ul {
     position: fixed;
     width: 100%;
     height: 58vh;
-    background-color: #d9b6b6;
+    background-color: #494141;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -696,12 +703,7 @@ ul {
   .contenido-footer {
     text-align: center; }
   .titulo-final {
-    font-size: 18px; }
-  /* Blog */
-  .contenido {
-    display: flex;
-    flex-direction: column;
-    margin: 70px; } }
+    font-size: 18px; } }
 
 /* footer */
 footer {
