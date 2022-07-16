@@ -144,9 +144,10 @@ main .sobre-nosotros {
 
 .contenido-textos p {
   padding: 10px;
+  margin-top: 40px;
   padding-left: 50px;
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
   font-size: large; }
 
 /* MARCAS */
@@ -388,27 +389,30 @@ ul {
   margin: auto; }
 
 .post-img-1 {
-  background: url(/images/logistica.jpg);
+  background: url(/images/remotti1.png);
   width: 100%;
   height: 200px;
-  background-size: cover;
+  background-size: 81%;
   background-position: center;
+  background-repeat: no-repeat;
   transition: .2s; }
 
 .post-img-2 {
-  background: url(/images/logistica.jpg);
+  background: url(/images/tipos.jpg);
   width: 100%;
   height: 200px;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   transition: .2s; }
 
 .post-img-3 {
-  background: url(/images/logistica.jpg);
+  background: url(/images/quesos1.jpg);
   width: 100%;
   height: 200px;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   transition: .2s; }
 
 .post {
@@ -489,6 +493,13 @@ ul {
   .sobre-nosotros .contenido-textos {
     width: 80%;
     padding-top: 50px; }
+  /* Marcas */
+  .galeria-marcas {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px; }
   /* Galeria */
   .imagen-port {
     width: 44%; }
@@ -571,16 +582,23 @@ ul {
     grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr;
     gap: 20px; }
+  .img-branca1 {
+    max-width: 140px;
+    margin-left: 22px; }
   /* Clientes */
-  .tarjetas .tarjeta {
+  .tarjeta {
     height: 200px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .tarjetas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px; }
-  .tarjetas .tarjeta img {
-    width: 90px;
-    height: 90px; }
+    gap: 50px; }
+  .contenido-texto-tarjeta {
+    margin-bottom: 50px; }
   /* Catalogo */
   .catalogo-cont {
     display: flex;
@@ -608,7 +626,8 @@ ul {
     padding: 2em; }
   /* blog */
   .contenido {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 350px; } }
 
 @media screen and (max-width: 500px) {
   .checkbtn {
@@ -658,18 +677,24 @@ ul {
   .sobre-nosotros .contenido-textos {
     width: 95%; }
   /* Marcas Lideres */
+  .galeria-marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .imagen-marcas {
     height: 150px; }
   /* Clientes */
-  .tarjetas .tarjeta {
+  .tarjeta {
     height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 10px; }
-  .tarjetas .tarjeta img {
-    width: 90px;
-    height: 90px; }
+    align-items: center; }
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenido-texto-tarjeta {
+    margin-bottom: 50px; }
   /* Catalogo */
   .catalogo-cont {
     display: flex;
@@ -703,7 +728,9 @@ ul {
   .contenido-footer {
     text-align: center; }
   .titulo-final {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .contacto-form form {
+    display: block; } }
 
 /* footer */
 footer {
