@@ -233,7 +233,7 @@ main .sobre-nosotros {
 
 .catalogo-ind {
   width: 26%;
-  text-align: center;
+  text-align: initial;
   cursor: pointer; }
   .catalogo-ind img {
     width: 100%;
@@ -516,7 +516,7 @@ ul {
   nav {
     height: 90px; }
   ul {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 58vh;
     background-color: #4d4141;
@@ -620,7 +620,7 @@ ul {
   nav {
     height: 80px; }
   ul {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 58vh;
     background-color: #494141;
@@ -742,4 +742,9 @@ footer {
   margin: 20px 0 0 0;
   color: #b9b9b9; }
 
-/* Variables */
+
+@media screen and (max-width: 376px) {
+
+ul {
+    height: 68vh;
+}
